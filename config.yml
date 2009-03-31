@@ -1,0 +1,15 @@
+jid: integrity@localhost/agent
+password: testing
+debug: true
+jabber_debug: true
+log_path: :error
+pid_path: tmp/integrity.pid
+herault_jid: herault@localhost/herault
+default_resources:
+- "/repository/github/halorgium/test-2"
+actor_path: lib
+actors:
+  vertebra_integrity/actors/continuous:
+  - "builder/config.yml"
+  - "/ircnet/freenode"
+  - "/channel/halorgium"
